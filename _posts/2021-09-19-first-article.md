@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: default
 title: First article!
 date: 2021-09-19T17:08:09.264Z
 thumbnail: /images/uploads/scr_images.jpeg
