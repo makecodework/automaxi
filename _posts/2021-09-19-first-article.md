@@ -6,5 +6,4 @@ thumbnail: /images/uploads/scr_images.jpeg
 rating: 3
 ---
 
-<img src="{{ site.baseurl }}/thumbnail">
 Some text about the article woth an image
