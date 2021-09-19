@@ -7,11 +7,6 @@ media_folder: "static/images/uploads" # Media files will be stored in the repo u
 public_folder: "/images/uploads"
 
 collections:
-  posts:
-    output: true
-    permalink: /posts/:path/
-
-collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
     folder: "_posts" # The path to the folder where the documents are stored
