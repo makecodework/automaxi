@@ -1,0 +1,106 @@
+@media screen and (max-width: 480px) {
+  /*defining the hamburger*/
+  #hamburger {
+    display: block;
+    position: absolute;
+    height: 48px;
+    width: 36px;
+    left: 15px;
+    top: 13px;
+    transform: translateY(-50%);
+    z-index: 200;
+  }
+  #hamburger .line {
+    width: 36px;
+    height: 2px;
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s cubic-bezier(0.58, 0, 0.58, 1);
+  }
+  #hamburger .line:nth-child(1) {
+    top: 18px;
+    width: 36px;
+  }
+  #hamburger .line:nth-child(2) {
+    top: 50%;
+    margin-top: 5px;
+    width: 36px;
+  }
+  #hamburger .line:nth-child(3) {
+    top: 100%;
+    margin-top: -8px;
+    width: 36px;
+  }
+  #hamburger:hover .line:nth-child(1),
+  #hamburger:focus .line:nth-child(1) {
+    transform: translateY(-0.5px);
+  }
+  #hamburger:hover .line:nth-child(3),
+  #hamburger:focus .line:nth-child(3) {
+    transform: translateY(1px);
+  }
+  #hamburger.hamburger__open .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    width: 36px;
+  }
+  #hamburger.hamburger__open .line:nth-child(2) {
+    opacity: 0;
+  }
+  #hamburger.hamburger__open .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    margin-top: -13px;
+  }
+  .top_header {
+    nav {
+      position: absolute;
+      width: 100%;
+      z-index: 100;
+      background: $main_color_background;
+      opacity: 0;
+      top: 43px;
+
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform: translateY(-100%);
+    }
+  }
+  nav.showMenu {
+    display: block;
+    transform: translateY(-1%);
+    opacity: 1;
+    padding: 20px 0;
+    ul {
+      display: flex;
+      flex-direction: column;
+
+      li {
+        border-bottom: 1px solid #b4b4b4;
+        padding: 7px 40px;
+        width: 100%;
+        a {
+          display: block;
+          color: $main_text_color;
+          span {
+            &:after {
+              border-top-color: $top_header_background;
+            }
+          }
+        }
+        &:last-child {
+          border-bottom: none;
+        }
+        > ul {
+          position: static;
+          box-shadow: none;
+          padding: 10px 0;
+          li {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+}

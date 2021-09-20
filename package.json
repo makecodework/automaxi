@@ -1,33 +1,36 @@
 {
   "name": "automaxi",
   "version": "1.0.0",
-  "description": "",
-  "main": "gulpfile.js",
+  "description": "web site for data storage.",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/makecodework/automaxi.git"
+    "url": "git+https://github.com/makecodework/order.git"
   },
   "keywords": [
-    "GitHub",
-    "pages",
-    "Auto"
+    "Socket",
+    "Data",
+    "Storage"
   ],
-  "author": "makecodework",
+  "author": "O.Poruchenko",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/makecodework/automaxi/issues"
+    "url": "https://github.com/makecodework/order/issues"
   },
-  "homepage": "https://github.com/makecodework/automaxi#readme",
+  "homepage": "https://github.com/makecodework/order#readme",
   "devDependencies": {
     "autoprefixer": "^10.3.3",
     "browser-sync": "^2.27.5",
     "cssnano": "^5.0.8",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^8.0.0",
+    "gulp-imagemin": "^4.1.0",
     "gulp-newer": "^1.4.0",
     "gulp-postcss": "^9.0.0",
     "gulp-rename": "^2.0.0",
