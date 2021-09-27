@@ -67,29 +67,111 @@ title: Main page
 <section class="main_catalog">
   <h3>Каталог автостекла</h3>
   <div class="filter_form_block">
-    <form class="" action="" method="post" class="filter_form">
-      <select class="" name="">
-        <option value="">Укажите вид стекла</option>
-        <option value="">Вид стекла 1</option>
-        <option value="">Вид стекла 2</option>
-        <option value="">Вид стекла 3</option>
-      </select>
-      <select class="" name="">
-        <option value="">Марка</option>
-        <option value="">Марка 1</option>
-        <option value="">Марка 2</option>
-        <option value="">Марка 3</option>
-      </select>
-      <select class="" name="">
-        <option value="">Модель</option>
-        <option value="">Модель 1</option>
-        <option value="">Модель 2</option>
-        <option value="">Модель 3</option>
-      </select>
-      <input type="text" name="" value="" placeholder="Или укажите еврокод">
-      <input type="submit" name="" value="Подобрать" class="readme">
-    </form>
+    {% include _filter_form.md %}
   </div>
+  <div class="list_catalog">
+    <div class="list_item">
+      <img src="{{ site.baseurl }}/images/uploads/clients/audi.png" alt="audi">
+      <span>Audi</span>  
+    </div>
+    <div class="list_item">
+      <img src="{{ site.baseurl }}/images/uploads/clients/bmw.png" alt="bmw">
+      <span>BMW</span>  
+    </div>
+    <div class="list_item">
+      <img src="{{ site.baseurl }}/images/uploads/clients/cherry.png" alt="cherry">
+      <span>Cherry</span>  
+    </div>
+    <div class="list_item">
+      <img src="{{ site.baseurl }}/images/uploads/clients/mazda.png" alt="mazda">
+      <span>Mazda</span>  
+    </div>
+    <div class="list_item">
+      <img src="{{ site.baseurl }}/images/uploads/clients/mersedes.png" alt="merc">
+      <span>Mercedes</span>  
+    </div>
+    <div class="list_item">
+      <img src="{{ site.baseurl }}/images/uploads/clients/toyota.png" alt="toyota">
+      <span>Toyota</span>  
+    </div>
+    <div class="list_item">
+      <img src="{{ site.baseurl }}/images/uploads/clients/volks.png" alt="volks">
+      <span>VolksWagen</span>  
+    </div>
+  </div>
+  <div class="showmore_btn"><a href="#" class="readme">Показать еще</a></div>
+</section>
+<section class="main_catalog">
+  <h3>Товары для установки автостекла</h3>
+  <div class="goods_catalog">
+    <div class="goods_list">
+      <img src="{{ site.baseurl }}/images/uploads/goods/good1.png" alt="">
+      <div class="info_price">
+        <p>Бур ТВС РФ - комплект (5 шт)</p>
+        <div class="price_btn">
+          <p>300 руб.</p>
+          <a href="#" class="buy_btn">Купить</a>
+        </div>
+      </div>
+    </div>
+    <div class="goods_list">
+      <img src="{{ site.baseurl }}/images/uploads/goods/good2.png" alt="">
+      <div class="info_price">
+        <p>Инжектор РФ</p>
+        <div class="price_btn">
+          <p>5000 руб.</p>
+          <a href="#" class="buy_btn">Купить</a>
+        </div>
+      </div>
+    </div>
+    <div class="goods_list">
+      <img src="{{ site.baseurl }}/images/uploads/goods/good3.png" alt="">
+      <div class="info_price">
+        <p>Клей JETA PRO, 600 мл, 1-часовой, пр-во Европа</p>
+        <div class="price_btn">
+          <p>400 руб.</p>
+          <a href="#" class="buy_btn">Купить</a>
+        </div>
+      </div>
+    </div>
+    <div class="goods_list">
+      <img src="{{ site.baseurl }}/images/uploads/goods/good4.png" alt="">
+      <div class="info_price">
+        <p>Инжектор РФ</p>
+        <div class="price_btn">
+          <p>5000 руб.</p>
+          <a href="#" class="buy_btn">Купить</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="showmore_btn"><a href="#" class="readme">Показать еще</a></div>
+</section>
+<section class="main_catalog">
+  <h3>Отзывы наших клиентов</h3>
 
+  <div class="goods_catalog">
+    <div class="rate_list">
+      <div class="rate_logo">
+        <img src="{{ site.baseurl }}/images/uploads/logo/Google_Maps_Logo.png" alt="logo">
+        <div class="stars"></div>
+      </div>
+      <a href="" target="_blank">Посмотреть <img src="{{ site.baseurl }}/assets/img/NewWindow.svg" alt="link"></a>
+    </div>
+    <div class="rate_list">
+      <div class="rate_logo">
+        <img src="{{ site.baseurl }}/images/uploads/logo/2GIS_logo 1.png" alt="logo">
+        <div class="stars"></div>
+      </div>
+      <a href="" target="_blank">Посмотреть <img src="{{ site.baseurl }}/assets/img/NewWindow.svg" alt="link"></a>
+    </div>
+    <div class="rate_list">
+      <div class="rate_logo">
+        <img src="{{ site.baseurl }}/images/uploads/logo/flamp-complex.png" alt="logo">
+        <div class="stars"></div>
+      </div>
+      <a href="" target="_blank">Посмотреть <img src="{{ site.baseurl }}/assets/img/NewWindow.svg" alt="link"></a>
+    </div>
+  </div>
 </section>
 </div>
