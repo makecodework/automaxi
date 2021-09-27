@@ -93,4 +93,3 @@ title: Main page
 
 </section>
 </div>
->>>>>>> parent of 36058e0c (Updated index.md)
