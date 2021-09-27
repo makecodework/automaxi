@@ -4,8 +4,8 @@
   margin-top: 15px;
   .logo_block {
     display: grid;
-    max-width: 307px;
-    margin-right: 40px;
+    width: 307px;
+    margin-right: 42px;
 
     .logo {
       margin-right: 17px;
@@ -39,10 +39,11 @@
         margin-right: 17px;
         top: 25%;
         position: relative;
+
       }
     }
     .schedule {
-      margin-left: 5px;
+      margin-left: 25px;
       /* align-self: center; */
     }
     .office_list {
@@ -74,12 +75,8 @@
         color: $main_text_color;
         @include rem(14);
         line-height: 20px;
-        display: block;
-        width: 173px;
-        float: right;
         img {
           margin-right: 12px;
-          float: left;
         }
       }
     }

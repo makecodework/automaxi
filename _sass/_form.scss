@@ -79,28 +79,21 @@ select.header_phone {
   background-position-x: 100%;
   background-position-y: 1px;
   padding: 0 1.5rem 0 0;
+
 }
 .readme {
+  display: block;
   width: 200px;
-  @include rem(16);
-  line-height: 22px;
-  padding: 6px 0;
-}
-.buy_btn,
-.readme {
-  //display: block;
   background-color: $button_color_background;
   color: $white_text_color;
   text-align: center;
+  @include rem(16);
+  line-height: 22px;
+  padding: 6px 0;
   border-radius: 2px;
-  padding: 7px 16px;
   &:hover {
     background-color: $button_hover_color_background;
   }
-}
-.buy_btn {
-  @include rem(14);
-  line-height: 21px;
 }
 .filter_form {
   display: -webkit-flex;
@@ -113,13 +106,15 @@ select.header_phone {
     border: 1px solid $form_input_border;
     padding: 4px 10px;
     @include rem(14);
+
   }
   input[type="text"],
   input[type="submit"],
   select {
     height: 28px;
+
   }
-  input[type="submit"] {
+  input[type="submit"]{
     padding: 0;
     width: 120px;
     @include rem(14);
@@ -127,13 +122,14 @@ select.header_phone {
   input[type="text"] {
     margin-right: 50px;
   }
-  select {
+  select{
+
     margin-right: 20px;
     width: 190px;
     -webkit-appearance: none;
     -moz-appearance: none;
     background: transparent;
-    background-image: url("../assets/img/select_arrow.svg");
+    background-image: url('../assets/img/select_arrow.svg');
     background-repeat: no-repeat;
     background-position-x: 94%;
     background-position-y: 10px;
@@ -141,5 +137,6 @@ select.header_phone {
     &:nth-child(3) {
       background-color: $grey_input_background;
     }
+
   }
 }
