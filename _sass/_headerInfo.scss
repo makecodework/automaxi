@@ -1,0 +1,90 @@
+.header_info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  .logo_block {
+    display: grid;
+    width: 307px;
+    margin-right: 42px;
+
+    .logo {
+      margin-right: 17px;
+    }
+    p {
+      @include rem(14);
+      line-height: 21px;
+      grid-column: 2 / span 2;
+    }
+    span {
+      display: block;
+      @include rem(16);
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $link_color;
+    }
+  }
+
+  .address_info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 57%;
+    .office_address,
+    .repair_address {
+      display: flex;
+      flex-direction: row;
+      margin-right: 42px;
+      img {
+        width: 20px;
+        height: 20px;
+        margin-right: 17px;
+        top: 25%;
+        position: relative;
+
+      }
+    }
+    .schedule {
+      margin-left: 25px;
+      /* align-self: center; */
+    }
+    .office_list {
+      ul {
+        li {
+          @include rem(14);
+          line-height: 21px;
+        }
+      }
+      span {
+        color: $grey_text_color;
+        @include rem(14);
+        line-height: 21px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .contact_block {
+    text-align: right;
+    .header_phone {
+      @include rem(18);
+      line-height: 25px;
+    }
+    .header_watsapp {
+      margin: 5px 0;
+
+      a {
+        color: $main_text_color;
+        @include rem(14);
+        line-height: 20px;
+        img {
+          margin-right: 12px;
+        }
+      }
+    }
+    a.order_call {
+      border-bottom: 1px solid $link_color;
+      color: $link_color;
+      @include rem(14);
+      line-height: 17px;
+    }
+  }
+}
