@@ -2,7 +2,6 @@
 layout: default
 title: Main page
 ---
-
 <div class="container">
   <div class="big_banner">
     <div class="banner_content">
