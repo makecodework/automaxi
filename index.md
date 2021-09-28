@@ -72,31 +72,31 @@ title: Main page
   <div class="list_catalog">
     <div class="list_item">
       <img src="{{ site.baseurl }}/images/uploads/clients/audi.png" alt="audi">
-      <span>Audi</span>  
+      <span>Audi</span>
     </div>
     <div class="list_item">
       <img src="{{ site.baseurl }}/images/uploads/clients/bmw.png" alt="bmw">
-      <span>BMW</span>  
+      <span>BMW</span>
     </div>
     <div class="list_item">
       <img src="{{ site.baseurl }}/images/uploads/clients/cherry.png" alt="cherry">
-      <span>Cherry</span>  
+      <span>Cherry</span>
     </div>
     <div class="list_item">
       <img src="{{ site.baseurl }}/images/uploads/clients/mazda.png" alt="mazda">
-      <span>Mazda</span>  
+      <span>Mazda</span>
     </div>
     <div class="list_item">
       <img src="{{ site.baseurl }}/images/uploads/clients/mersedes.png" alt="merc">
-      <span>Mercedes</span>  
+      <span>Mercedes</span>
     </div>
     <div class="list_item">
       <img src="{{ site.baseurl }}/images/uploads/clients/toyota.png" alt="toyota">
-      <span>Toyota</span>  
+      <span>Toyota</span>
     </div>
     <div class="list_item">
       <img src="{{ site.baseurl }}/images/uploads/clients/volks.png" alt="volks">
-      <span>VolksWagen</span>  
+      <span>VolksWagen</span>
     </div>
   </div>
   <div class="showmore_btn"><a href="#" class="readme">Показать еще</a></div>
@@ -172,6 +172,29 @@ title: Main page
       </div>
       <a href="" target="_blank">Посмотреть <img src="{{ site.baseurl }}/assets/img/NewWindow.svg" alt="link"></a>
     </div>
+  </div>
+</section>
+<section class="call_block">
+
+  <div class="leave_message">
+    <div class="call_to_us">
+      <h3>Оставить заявку</h3>
+      <p>Мы перезвоним вам в ближайшее время</p>
+      <form method="" class="call_form">
+        <input type="text" value="" placeholder="+38(098) 123 45 67"/>
+        <input type="submit" name="" class="readme" value="Отправить">
+      </form>
+      <span>Нажимая на кнопку «Отправить», я автоматически соглашаюсь с Политикой конфиденциальности</span>
+    </div>
+    <div class="call_to_us">
+      <h3>Или свяжитесь с нами самостоятельно</h3>
+      <img class="curle_arrow" src="{{ site.baseurl }}/assets/img/big_arrow.svg" alt=""/>
+      <ul>
+        <li><a href="tel:0981234567"><img src="{{ site.baseurl }}/assets/img/phone_icon.svg">+38(098)1234567</a></li>
+        <li><a href=""><img src="{{ site.baseurl }}/assets/img/whatsapp_icon.svg">Написать в WhatsApp</a></li>
+      </ul>
+    </div>
+
   </div>
 </section>
 </div>

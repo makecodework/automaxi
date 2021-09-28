@@ -51,6 +51,18 @@ input::-ms-clear {
 input[type="password"]::-ms-reveal {
   display: none;
 }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $form_input_border;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: $form_input_border;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: $form_input_border;
+}
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -141,5 +153,16 @@ select.header_phone {
     &:nth-child(3) {
       background-color: $grey_input_background;
     }
+  }
+}
+.call_form {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  input[type="text"] {
+    padding: 11px 16px;
+  }
+  input[type="submit"] {
+    width: 150px;
   }
 }

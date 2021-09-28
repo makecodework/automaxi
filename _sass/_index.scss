@@ -145,6 +145,8 @@
   }
   .goods_list {
     padding: 24px 30px 41px;
+    display: -webkit-flex;
+    display: -ms-flex;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -158,6 +160,8 @@
       }
     }
     .price_btn {
+      display: -webkit-flex;
+      display: -ms-flex;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -175,6 +179,8 @@
     padding: 20px 0 0;
 
     a {
+      display: -webkit-flex;
+      display: -ms-flex;
       display: flex;
       flex-direction: row;
       margin: 20px 0;
@@ -202,4 +208,76 @@
   justify-content: center;
   text-align: center;
   margin-top: 40px;
+}
+.call_block {
+  margin: 80px 0;
+  background-color: $top_header_background;
+  .leave_message{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 90px;
+    width: 70%;
+    margin: 0 auto;
+    .call_to_us {
+      margin: 33px 0 40px;
+      color: $white_text_color;
+      position: relative;
+      h3{
+        @include rem(24);
+
+        line-height: 31px;
+      }
+      p{
+        margin: 22px 0;
+        line-height: 22px;
+        @include rem(16);
+
+      }
+      span {
+        @include rem(12);
+        color: $color_input_background;
+        margin-top: 12px;
+        display: block;
+        width: 80%;
+      }
+      .curle_arrow {
+        position: absolute;
+        right: 65px;
+        top: 45px;
+      }
+
+      ul {
+        margin-top: 36px;
+        li {
+          margin-bottom: 20px;
+          a {
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            align-items: center;
+            @include rem(16);
+            font-weight: 400;
+            line-height: 22px;
+            color: $white_text_color;
+            img {
+              float: left;
+              width: 24px;
+              height: 24px;
+              margin-right: 17px;
+            }
+
+          }
+          &:first-child {
+            a {
+              @include rem(18);
+              font-weight: 500;
+              line-height: 25px;
+
+            }
+          }
+        }
+      }
+
+    }
+  }
 }
